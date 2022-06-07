@@ -1,0 +1,405 @@
+
+
+/* Universal Styles */
+
+
+body {
+    background-color: rgba(0, 0, 0, 0.884);
+    font-family: Ubuntu;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.flex-container img {
+    width: 100%;
+}
+
+
+/* Header Styles */
+
+
+nav {
+    position: fixed;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    z-index: 1;
+    background-color: rgb(0, 0, 0);
+}
+
+#nav-header {
+    z-index: 0;
+    position: absolute;
+    width: 100%;
+    text-align: left;
+}
+
+nav h1 {
+    font-size: 30px;
+    margin-left: 1rem;
+    color: rgb(255, 255, 252);
+}
+
+nav ul {
+    z-index: 1;
+    display: flex;
+    list-style-type: none;
+    margin: 1.5rem 0rem;
+
+}
+
+nav a {
+    font-weight: 500;
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    padding: 8px 10px;
+    margin: 1rem;
+    border-radius: 2px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    background-color: #97519c;
+}
+
+nav a:active {
+    background-color: #9b3da1;
+}
+
+
+/* Jumbotron Styles */
+
+
+.fade-in {
+    animation: fadeIn 3s;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity:0;
+    }
+    100% {
+        opacity:1;
+    }
+}
+
+.main-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.content-card {
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    height: 50%;
+    font-size: 30px;
+    color: rgb(255, 255, 252);
+}
+
+.content-card h2 {
+    margin: 20px;
+    font-size: 3.5rem;
+}
+
+.img-container {
+    position: relative;
+}
+
+
+/* Services Styles */
+
+
+#services {
+    position: relative;
+    width: 100%;
+    top: -3px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url(/resources/images/main-bg/mixing-room.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow-x: hidden;
+}
+
+#services-header {
+    position: relative;
+    width: 100%;
+    padding: 2rem;
+    font-size: 3rem;
+    font-weight: 400;
+    text-align: center;
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 252);
+}
+
+.services-cards {
+    margin-top: 1%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+
+.card {
+    margin: 2rem;
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 252);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 33%;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.card p {
+    font-weight: 100;
+    text-align: center;
+    line-height: 2rem;
+    margin: 20px;
+    font-size: 1.3rem;
+}
+
+.card h3 {
+    padding: 1rem;
+    font-size: 2rem;
+    font-weight: 400;
+}
+
+.card h4 {
+    padding-bottom: 1.2rem;
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.card .btn {
+    background-color: white;
+    color: rgb(0, 0, 0);
+    padding: 10px;
+    width: 50%;
+    margin-bottom: 40px;
+    user-select: none;
+    transition: 0.3s;
+}
+
+.card .btn:hover {
+    background-color: #97519c;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#mixing img{
+    width: 100%;
+}
+
+
+/* About Us Styles */
+
+
+#about-us {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    position: relative;
+    margin-top: -3px;
+    overflow-x: hidden;
+}
+
+#about-us .card {
+    border-radius: 10px;
+}
+
+#about-us-header {
+    position: relative;
+    padding: 2rem;
+    width: 100%;
+    font-size: 3rem;
+    font-weight: 400;
+    text-align: center;
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 252);
+}
+
+#mission-statement {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem;
+    width: 70%;
+    color: white;
+}
+
+#mission-statement p {
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+#lead-engineers {
+    color: white;
+    font-weight: 400;
+    font-size: 2rem;
+}
+
+#team-members {
+    display: flex;
+    justify-content: space-around;
+}
+
+.engineer p {
+    margin: 15px 0;
+}
+
+.engineer span {
+    font-size: 1.25rem;
+    margin-bottom: 20px;
+}
+
+
+/* Contact Styles */
+
+
+#contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+#contact-us-header {
+    padding: 2rem;
+    width: 100%;
+    font-size: 3rem;
+    font-weight: 400;
+    text-align: center;
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+}
+
+#contact-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    margin: 20px;
+}
+
+#contact-info p {
+    color: rgb(255, 255, 255);
+    font-size: 1.4rem;
+    margin: 5px;
+    font-weight: 300;
+}
+
+
+/* Footer Styles */
+
+
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    height: 4rem;
+    text-align: left;
+    color: white;
+    background-color: rgb(0, 0, 0);
+}
+
+footer p {
+    margin: 10px;
+}
+
+@media only screen and (max-width: 515px) {
+    nav {
+        display: none;
+    }
+    .img-container {
+        width: 100%;
+    }
+    #services-header {
+        font-size: 2rem;
+        margin: 0;
+    }
+    #about-us-header {
+        font-size: 2rem;
+        margin: 0;
+    }
+    #contact-us-header {
+        font-size: 2rem;
+        margin: 0;
+    }
+    #contact-info p {
+        font-size: 1rem;
+    }
+}
+
+@media only screen and (max-width: 960px) {
+    .engineer span {
+        font-size: 1rem;
+    }
+}
+
+@media only screen and (max-width: 840px) {
+    .engineer span {
+        font-size: 0.75rem;
+        font-weight: 800;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    nav h1 {
+        display: none;
+    }
+    nav {
+        justify-content: center;
+    }
+    .content-card h2 {
+        font-size: 2.5rem;
+    }
+    .services-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+    #team-members {
+        flex-direction: column;
+        align-items: center;
+    }
+    .card {
+        width: 65%;
+    }
+    .engineer span {
+        font-size: 1.3rem;
+    }
+}
+
+@media only screen and (min-width: 1080px) {
+    #team-members {
+        width: 60%;
+    }
+    .services-cards {
+        width: 60%;
+    }
+}
